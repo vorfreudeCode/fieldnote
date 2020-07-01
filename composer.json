@@ -1,18 +1,28 @@
 {
     "name": "syhcode/field-note",
+    "description": "a laravel database file note",
+    "keywords": ["laravel", "field", "note", "comment", "annotate","translate"],
+    "homepage": "https://github.com/vorfreudeCode/tpModelFilter",
+    "license": "MIT",
     "authors": [
         {
             "name": "857601608@qq.com",
             "email": "857601608@qq.com"
         }
     ],
-     "require": {
-              "php": ">=5.5.9",
-              "topthink/think-orm": "^2.0"
-            },
-            "autoload": {
-                "psr-4": {
-                  "FileNote\\": "src/"
-                }
+    "require": {
+          "php": ">=5.5.9"
+        },
+        "autoload": {
+            "psr-4": {
+              "FileNote\\": "src/"
+            }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FileNote\\NoteServiceProvider"
+            ]
         }
+    }
 }

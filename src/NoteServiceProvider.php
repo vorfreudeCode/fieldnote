@@ -6,7 +6,7 @@ namespace FileNote;
 
 use Illuminate\Support\ServiceProvider;
 
-class NoteServiceProvide extends ServiceProvider
+class NoteServiceProvider extends ServiceProvider
 {
     public function register()
     {
