@@ -1,0 +1,18 @@
+{
+    "name": "syhcode/field-note",
+    "authors": [
+        {
+            "name": "857601608@qq.com",
+            "email": "857601608@qq.com"
+        }
+    ],
+     "require": {
+              "php": ">=5.5.9",
+              "topthink/think-orm": "^2.0"
+            },
+            "autoload": {
+                "psr-4": {
+                  "FileNote\\": "src/"
+                }
+        }
+}
