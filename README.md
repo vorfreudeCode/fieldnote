@@ -40,13 +40,13 @@ php artisan migrate
 
 namespace App\Models;
 
-use App\ModelService\NoteTrait;
+use FileNote\NoteTrait;
 use Illuminate\Database\Eloquent\Model;
 
 class Member extends Model
 {
     use NoteTrait;
-  	protected $note_fields = ["type"];
+    protected $note_fields = ["type"];
 }
 
 ```
@@ -68,7 +68,7 @@ class HomeController extends Controller
       	//不传参自动预加载 model 里面 $note_fields 的字段说明
         $member = Member::note()->first();
         //单个字段
- 				$member = Member::note('type')->first();
+        $member = Member::note('type')->first();
       	//多个字段
         $member = Member::note('type','level')->first();
         $member = Member::note(['type','level'])->first();
